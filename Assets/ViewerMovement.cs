@@ -16,15 +16,7 @@ public class ViewerMovement : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-        if(Input.GetKey("z"))
-        {
-            pos.RotateAround(transform.position, Vector3.right, angle * Time.deltaTime);
-        }
 
-        if (Input.GetKey("x"))
-        {
-            pos.RotateAround(transform.position, Vector3.left, angle * Time.deltaTime);
-        }
     }
 
     void LateUpdate()
